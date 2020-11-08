@@ -580,12 +580,23 @@ body {
     margin: 0 auto;
 }
 
+.wrapper__header {
+    width: 1150px;
+    height: 600px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header__log {
-    position: absolute;
     width: 96px;
     height: 60px;
-    left: 402px;
-    top: 50px;
     font-family: Revalia;
     font-style: normal;
     font-weight: normal;
@@ -597,11 +608,8 @@ body {
 }
 
 .header__nav {
-    position: absolute;
     width: 615px;
     height: 16px;
-    left: 896px;
-    top: 72px;
 }
 
 .header__logo-link {
@@ -610,6 +618,7 @@ body {
 
 .header__list {
     display: flex;
+    justify-content: end;
 }
 
 .header__item {
@@ -635,20 +644,33 @@ body {
     opacity: .75;
 }
 
+.header__intro {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    width: 1150px;
+}
+
 .header__image {
-    position: absolute;
     width: 357px;
     height: 233.7px;
-    left: 487px;
-    top: 271px;
+    margin-left: 80px;
+}
+
+.header__content {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 110px;
 }
 
 .header__title {
-    position: absolute;
     width: 541px;
     height: 45px;
-    left: 974px;
-    top: 250px;
+    margin-bottom: 60px;
     font-weight: 500;
     font-size: 48px;
     line-height: 79px;
@@ -656,23 +678,16 @@ body {
 }
 
 .header__text {
-    position: absolute;
     width: 540px;
-    height: 67px;
-    left: 975px;
-    top: 355px;
-    /* p */
+    height: 65px;
+    margin-bottom: 60px;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
     color: #727272;
 }
 
-.header__button {
-    position: absolute;
-    left: 975px;
-    top: 482px;
-}
+.header__button {}
 
 .button {
     width: 225px;
@@ -692,16 +707,18 @@ body {
 /* AboutMe style start */
 
 .about-me {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
     width: 1920px;
     height: 370px;
 }
 
 .about-me__title {
-    position: absolute;
     width: 403px;
     height: 30px;
-    left: 758px;
-    top: 812px;
+    margin: auto;
+    margin-bottom: 50px;
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
@@ -710,11 +727,9 @@ body {
 }
 
 .about-me__text {
-    position: absolute;
     width: 540px;
     height: 67px;
-    left: 690px;
-    top: 892px;
+    margin: auto;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -767,21 +782,27 @@ body {
 /* My skills style start */
 
 .my-skills {
+    display: flex;
     width: 1920px;
     height: 655px;
 }
 
 .my-skills__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
     width: 1150px;
     height: 450px;
+    margin: auto;
 }
 
 .my-skills__block-text {
+    height: 450px;
+    width: 550px;
     display: flex;
     flex-direction: column;
-    align-content: space-around;
-    margin-left: 386px;
-    margin-top: 204px;
+    justify-content: center;
 }
 
 .my-skills__title {
@@ -790,6 +811,7 @@ body {
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
+    margin-bottom: 20px;
     color: #000000;
 }
 
@@ -797,17 +819,84 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
+    margin-top: 30px;
     color: #727272;
 }
 
+.my-skills__scale {
+    width: 445px;
+    height: 4px;
+    margin-top: 20px;
+    background: #C4C4C4;
+}
+
+.my-skills__level {
+    width: 349.36px;
+    height: 4px;
+    background: #34547A;
+    transform: rotate(-0.06deg);
+}
+
 .my-skills__photo {
-    position: absolute;
     width: 555px;
     height: 450px;
-    left: 981px;
-    top: 1411px;
     background: #C4C4C4;
 }
 
 
 /* My skills style end */
+
+
+/* How i work style start */
+
+.how-i-work {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    width: 1920px;
+    height: 1004px;
+    background: #EEEFF1;
+}
+
+.how-i-work__title {
+    width: 403px;
+    height: 30px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.how-i-work__text {
+    width: 540px;
+    height: 67px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.how-i-work__present-video {
+    display: flex;
+    width: 1110px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 57px;
+    background: url(/img/Preset-video.jpg);
+}
+
+.how-i-work__paly-button {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+
+/* How i work style end */

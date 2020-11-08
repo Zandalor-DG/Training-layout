@@ -10,46 +10,49 @@
 
 <body>
     <header class="header">
-
-        <div class="header__log">
-            <a href="/" class="header__logo-link">
+        <div class="wrapper__header">
+            <div class="header__wrapper">
+                <div class="header__log">
+                    <a href="/" class="header__logo-link">
                             WD
                     </a>
-        </div>
+                </div>
 
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#!" class="header__link">ГЛАВНАЯ</a>
-                </li>
-                <li class="header__item">
-                    <a href="#!" class="header__link">ОБ АВТОРЕ</a>
-                </li>
-                <li class="header__item">
-                    <a href="#!" class="header__link">РАБОТЫ</a>
-                </li>
-                <li class="header__item">
-                    <a href="#!" class="header__link">ПРОЦЕСС</a>
-                </li>
-                <li class="header__item">
-                    <a href="#!" class="header__link">КОНТАКТЫ</a>
-                </li>
-            </ul>
-        </nav>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#!" class="header__link">ГЛАВНАЯ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">ОБ АВТОРЕ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">РАБОТЫ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">ПРОЦЕСС</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#!" class="header__link">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
-        <div class="header__intro">
-            <img src="./img/svg/Frame.svg" alt="Frame" class="header__image">
+            <div class="header__intro">
+                <img src="./img/svg/Frame.svg" alt="Frame" class="header__image">
 
-            <div class="header__content">
-                <h1 class="header__title">
-                    Дизайн и верстка
-                </h1>
-                <p class="header__text">
-                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-                </p>
-                <button class="header__button button">
+                <div class="header__content">
+                    <h1 class="header__title">
+                        Дизайн и верстка
+                    </h1>
+                    <p class="header__text">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                    <button class="header__button button">
                             Написать мне
                         </button>
+                </div>
             </div>
         </div>
     </header>
@@ -117,15 +120,36 @@
 
         <section class="my-skills">
             <div class="my-skills__wrapper">
-                <div class="my-skills__section">
-                    <div class="my-skills__block-text">
-                        <h2 class="my-skills__title">Мои навыки</h2>
-                        <p class="my-skills__text">Adobe Photoshop</p>
-                        <p class="my-skills__text">Adobe Photoshop</p>
-                        <p class="my-skills__text">Adobe Photoshop</p>
-                    </div>
-                    <img src="/img/Photo.jpg" alt="" class="my-skills__photo">
+                <div class="my-skills__block-text">
+                    <h2 class="my-skills__title">Мои навыки</h2>
+                    <p class="my-skills__text">Adobe Photoshop
+                        <div class="my-skills__scale">
+                            <div class="my-skills__level"></div>
+                        </div>
+                    </p>
+                    <p class="my-skills__text">Adobe Photoshop
+                        <div class="my-skills__scale">
+                            <div class="my-skills__level"></div>
+                        </div>
+                    </p>
+                    <p class="my-skills__text">Adobe Photoshop
+                        <div class="my-skills__scale">
+                            <div class="my-skills__level"></div>
+                        </div>
+                    </p>
                 </div>
+                <img src="/img/Photo.jpg" alt="" class="my-skills__photo">
+            </div>
+        </section>
+        <section class="how-i-work">
+            <h2 class="how-i-work__title">
+                Как я работаю
+            </h2>
+            <p class="how-i-work__text">
+                Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+            </p>
+            <div class="how-i-work__present-video">
+                <img src="/img/svg/play-button.svg" alt="" class="how-i-work__paly-button">
             </div>
         </section>
     </main>
