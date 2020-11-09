@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Обо мне</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/robotoFont.css">
+    <link rel="stylesheet" href="./css/revaliaFont.css">
+    <link rel="stylesheet" href="./css/style1280.css">
+    <link rel="stylesheet" href="./css/style320-1279.css">
 </head>
 
 <body>
@@ -201,10 +205,12 @@
                 <h2 class="site-order__title">Хотите веб-сайт?</h2>
                 <p class="site-order__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                 <form action="" class="site-order__form">
-                    <input type="text" class="site-order__text" placeholder="Ваше имя">
-                    <input type="email" class="site-order__text" placeholder="Ваш e-mail">
-                    <input type="text-area" class="site-order__text-area" placeholder="Сообщение">
-                    <button class="site-order__button">ОТПРАВИТЬ</button>
+                    <div class="form__text--center">
+                        <input type="text" class="form__input" placeholder="Ваше имя">
+                        <input type="email" class="form__input" placeholder="Ваш e-mail">
+                    </div>
+                    <input type="text" class="form__text-area" rows="10" cols="45" name="text" placeholder="Сообщение">
+                    <button class="form__button">ОТПРАВИТЬ</button>
                 </form>
             </div>
         </section>

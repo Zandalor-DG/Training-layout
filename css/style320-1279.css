@@ -1,0 +1,218 @@
+@media (min-width: 320px) and (max-width:1279px) {
+    body {
+        width: 375px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: normal;
+        color: #000;
+    }
+    /* Header style start */
+    .header {
+        background-color: #EEEFF1;
+        top: 0;
+        left: 0;
+        width: 375px;
+        height: 782px;
+    }
+    .wrapper__header {
+        width: 355px;
+        height: 600px;
+    }
+    .header__log {
+        width: 96px;
+        height: 60px;
+        font-family: Revalia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 60px;
+        margin-left: 15px;
+        /* identical to box height */
+        text-align: center;
+        color: #34547A;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__logo-link {
+        text-decoration: none;
+    }
+    .header__intro {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+        width: 375px;
+    }
+    .header__image {
+        width: 298px;
+        height: 195px;
+    }
+    .header__content {
+        display: flex;
+        flex-flow: column;
+        height: 300px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .header__title {
+        width: 302px;
+        height: 41px;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 100%;
+        text-align: center;
+    }
+    .header__text {
+        width: 322px;
+        height: 98px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: #727272;
+    }
+    button {
+        width: 225px;
+        height: 65px;
+        background: #34547A;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+    /* Header style end */
+    /* AboutMe style start */
+    .about-me {
+        width: 375px;
+        height: 351px;
+    }
+    .about-me__wrapper {
+        width: 375px;
+        height: 351px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-me__title {
+        width: 126.39px;
+        height: 38px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        color: #000000;
+    }
+    .about-me__text {
+        width: 323px;
+        height: 98px;
+        margin-top: 42px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: #727272;
+    }
+    /* AboutMe style end */
+    /* Portfolio style end */
+    .portfolio {
+        width: 376px;
+        height: 477px;
+        background: #34547A;
+    }
+    .portfolio__wrapper {
+        width: 376px;
+        height: 400px;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    .portfolio__section {
+        width: 141px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .portfolio__block-text {
+        width: 36px;
+        height: 19px;
+        left: 286px;
+        top: 1350px;
+        /* h3 */
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .portfolio__title {
+        width: 36px;
+        height: 19px;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .portfolio__text {
+        width: 71px;
+        height: 15px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    /* Portfolio style end */
+    /* My skills style start */
+    .my-skills {}
+    .my-skills__wrapper {}
+    .my-skills__block-text {}
+    .my-skills__title {}
+    .my-skills__text {}
+    .my-skills__scale {}
+    .my-skills__level {}
+    .my-skills__photo {}
+    /* My skills style end */
+    /* How i work style start */
+    .how-i-work {}
+    .how-i-work__title {}
+    .how-i-work__text {}
+    .how-i-work__present-video {}
+    /* How i work style end */
+    /* Projects style start */
+    .projects {}
+    .projects__wrapper {}
+    .projects__example-of-work {}
+    .projects__container-link {}
+    .projects__container-link>.projects__link,
+    .projects__container-link .projects__example-of-work {}
+    .projects__container-link>.projects__link {}
+    .projects__container-link>.projects__link:before {}
+    .projects__container-link:hover>.projects__link:before {}
+    /* Projects style end */
+    /* Site order style start */
+    .site-order {}
+    .site-order__wrapper {}
+    .site-order__title {}
+    .site-order__text {}
+    .site-order__form {}
+    .form__text--center {}
+    input {}
+    .form__text-area {}
+    /* Site order style end */
+    /* Footer style start */
+    .footer {}
+    .footer__wrapper {}
+    .footer__signature {}
+    .footer__title {}
+    .footer__text {}
+    .footer__social-networks {
+        /* Footer style end */
+    }
+}

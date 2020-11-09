@@ -1,0 +1,449 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/* .wrapper {} */
+
+@media (min-width: 1280px) {
+    body {
+        width: 1920px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: normal;
+        color: #000;
+    }
+    /* Header style start */
+    .header {
+        background-color: #EEEFF1;
+        top: 0;
+        left: 0;
+        width: 1920px;
+        height: 700px;
+        margin: 0 auto;
+    }
+    .wrapper__header {
+        width: 1150px;
+        height: 600px;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .header__wrapper {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__log {
+        width: 96px;
+        height: 60px;
+        font-family: Revalia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 60px;
+        /* identical to box height */
+        text-align: center;
+        color: #34547A;
+    }
+    .header__nav {
+        width: 615px;
+        height: 16px;
+    }
+    .header__logo-link {
+        text-decoration: none;
+    }
+    .header__list {
+        display: flex;
+        justify-content: end;
+    }
+    .header__item {
+        margin-right: 42px;
+    }
+    .header__item:last-child {
+        margin-right: 0px;
+    }
+    .header__link {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        color: #000000;
+        text-decoration: none;
+    }
+    .header__link:hover,
+    .header__link:active,
+    .header__link:focus {
+        opacity: .75;
+    }
+    .header__intro {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 100px;
+        width: 1150px;
+    }
+    .header__image {
+        width: 357px;
+        height: 233.7px;
+        margin-left: 80px;
+    }
+    .header__content {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-left: 110px;
+    }
+    .header__title {
+        width: 541px;
+        height: 45px;
+        margin-bottom: 60px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 79px;
+        color: #000000;
+    }
+    .header__text {
+        width: 540px;
+        height: 65px;
+        margin-bottom: 60px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #727272;
+    }
+    button {
+        width: 225px;
+        height: 65px;
+        background: #34547A;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+    /* Header style end */
+    /* AboutMe style start */
+    .about-me {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        width: 1920px;
+        height: 370px;
+    }
+    .about-me__title {
+        width: 403px;
+        height: 30px;
+        margin: auto;
+        margin-bottom: 50px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        color: #000000;
+    }
+    .about-me__text {
+        width: 540px;
+        height: 67px;
+        margin: auto;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+    /* AboutMe style end */
+    /* Portfolio style end */
+    .portfolio {
+        display: flex;
+        align-items: center;
+        width: 1920px;
+        height: 250px;
+        background: #34547A;
+    }
+    .portfolio__wrapper {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        width: 1150px;
+        margin-left: auto;
+        margin-right: auto;
+        vertical-align: middle;
+    }
+    .portfolio__section {
+        display: flex;
+        justify-content: space-around;
+        width: 141px;
+        height: 50px;
+    }
+    .portfolio__block-text {
+        margin-left: 20px;
+    }
+    .portfolio__title {
+        width: 36px;
+        height: 19px;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .portfolio__text {
+        width: 71px;
+        height: 15px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    /* Portfolio style end */
+    /* My skills style start */
+    .my-skills {
+        display: flex;
+        width: 1920px;
+        height: 655px;
+    }
+    .my-skills__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row;
+        width: 1150px;
+        height: 450px;
+        margin: auto;
+    }
+    .my-skills__block-text {
+        height: 450px;
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .my-skills__title {
+        width: 403px;
+        height: 30px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 20px;
+        color: #000000;
+    }
+    .my-skills__text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 30px;
+        color: #727272;
+    }
+    .my-skills__scale {
+        width: 445px;
+        height: 4px;
+        margin-top: 20px;
+        background: #C4C4C4;
+    }
+    .my-skills__level {
+        width: 349.36px;
+        height: 4px;
+        background: #34547A;
+        transform: rotate(-0.06deg);
+    }
+    .my-skills__photo {
+        width: 555px;
+        height: 450px;
+        background: #C4C4C4;
+    }
+    /* My skills style end */
+    /* How i work style start */
+    .how-i-work {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column;
+        width: 1920px;
+        height: 1004px;
+        background: #EEEFF1;
+    }
+    .how-i-work__title {
+        width: 403px;
+        height: 30px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+    .how-i-work__text {
+        width: 540px;
+        height: 67px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .how-i-work__present-video {
+        display: flex;
+        width: 1110px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 57px;
+    }
+    /* How i work style end */
+    /* Projects style start */
+    .projects {
+        width: 1920px;
+        height: 960px;
+    }
+    .projects__wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .projects__example-of-work {
+        width: 480px;
+        height: 480px;
+    }
+    .projects__container-link {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .projects__container-link>.projects__link,
+    .projects__container-link .projects__example-of-work {
+        display: block;
+    }
+    .projects__container-link>.projects__link {
+        position: relative;
+    }
+    .projects__container-link>.projects__link:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity .3s linear;
+    }
+    .projects__container-link:hover>.projects__link:before {
+        opacity: .75;
+        background: rgba(52, 84, 122, 0.8) url(/img/svg/view.svg) no-repeat center;
+    }
+    /* Projects style end */
+    /* Site order style start */
+    .site-order {
+        width: 1920px;
+        height: 762px;
+        background: #EEEFF1;
+    }
+    .site-order__wrapper {
+        width: 1150px;
+        height: 700px;
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .site-order__title {
+        width: 406px;
+        height: 30px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+    }
+    .site-order__text {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: #727272;
+        width: 540px;
+        height: 67px;
+    }
+    .site-order__form {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .form__text--center {
+        width: 570px;
+        height: 80px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+    input {
+        border: none;
+        padding-left: 20px;
+        width: 255px;
+        height: 50px;
+        background: #FFFFFF;
+    }
+    .form__text-area {
+        width: 540px;
+        height: 175px;
+        margin-bottom: 50px;
+        text-align: left;
+        padding-bottom: 120px;
+        padding-left: 20px;
+    }
+    /* Site order style end */
+    /* Footer style start */
+    .footer {
+        width: 1920px;
+        height: 151px;
+        background: #34547A;
+    }
+    .footer__wrapper {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 1920px;
+        height: 150px;
+    }
+    .footer__signature {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        width: 200px;
+        height: 50px;
+    }
+    .footer__title {
+        width: 130px;
+        height: 19px;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .footer__text {
+        width: 193px;
+        height: 12px;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+    .footer__social-networks {
+        width: 200px;
+        height: 40px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    /* Footer style end */
+}
