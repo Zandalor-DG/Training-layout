@@ -304,11 +304,20 @@ html {
     /* Projects style start */
     .projects {
         width: 1920px;
-        height: 960px;
+        height: 1016px;
+        background: #FFFFFF;
     }
     .projects__wrapper {
+        margin-top: 50px;
+    }
+    .projects__column-one {
         display: flex;
         flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    .projects__column-two {
+        display: flex;
+        flex-flow: row-reverse wrap;
         justify-content: flex-start;
     }
     .projects__example-of-work {

@@ -122,34 +122,34 @@
     /* AboutMe style end */
     /* Portfolio style end */
     .portfolio {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
         width: 376px;
         height: 477px;
         background: #34547A;
     }
     .portfolio__wrapper {
         width: 376px;
-        height: 400px;
+        height: 440px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        align-items: center;
         flex-flow: row wrap;
     }
     .portfolio__section {
         width: 141px;
         height: 50px;
         display: flex;
+        margin-right: 28px;
         justify-content: space-around;
     }
     .portfolio__block-text {
         width: 36px;
         height: 19px;
-        left: 286px;
-        top: 1350px;
-        /* h3 */
-        font-family: Roboto;
-        font-style: normal;
         font-weight: 500;
         font-size: 21px;
-        line-height: 25px;
         color: #FFFFFF;
     }
     .portfolio__title {
@@ -157,7 +157,6 @@
         height: 19px;
         font-weight: 500;
         font-size: 21px;
-        line-height: 25px;
         color: #FFFFFF;
     }
     .portfolio__text {
@@ -165,54 +164,239 @@
         height: 15px;
         font-weight: normal;
         font-size: 16px;
-        line-height: 26px;
         color: #FFFFFF;
     }
     /* Portfolio style end */
     /* My skills style start */
-    .my-skills {}
-    .my-skills__wrapper {}
-    .my-skills__block-text {}
-    .my-skills__title {}
-    .my-skills__text {}
-    .my-skills__scale {}
-    .my-skills__level {}
-    .my-skills__photo {}
+    .my-skills {
+        width: 376px;
+        height: 815px;
+    }
+    .my-skills__wrapper {
+        width: 376px;
+        height: 800px;
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .my-skills__block-text {
+        width: 376px;
+        height: 300px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .my-skills__title {
+        width: 189px;
+        height: 38px;
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #000000;
+    }
+    .my-skills__text {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        width: 339px;
+        height: 15px;
+        font-weight: normal;
+        font-size: 16px;
+        color: #727272;
+    }
+    .my-skills__scale {
+        width: 339px;
+        height: 4px;
+        background: #C4C4C4;
+    }
+    .my-skills__level {
+        width: 266.14px;
+        height: 4px;
+        background: #34547A;
+        transform: rotate(-0.06deg);
+    }
+    .my-skills__photo {
+        width: 339px;
+        height: 275px;
+        background: #C4C4C4;
+    }
     /* My skills style end */
     /* How i work style start */
-    .how-i-work {}
-    .how-i-work__title {}
-    .how-i-work__text {}
-    .how-i-work__present-video {}
+    .how-i-work {
+        width: 376px;
+        height: 596px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background: #E5E5E5;
+    }
+    .how-i-work__title {
+        width: 220.68px;
+        height: 38px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        margin-bottom: 34px;
+        color: #000000;
+    }
+    .how-i-work__text {
+        width: 323px;
+        height: 98px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        margin-bottom: 57px;
+        text-align: center;
+        color: #727272;
+    }
+    .how-i-work__present-video {
+        width: 339px;
+        height: 185px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+    }
     /* How i work style end */
     /* Projects style start */
-    .projects {}
-    .projects__wrapper {}
-    .projects__example-of-work {}
-    .projects__container-link {}
-    .projects__container-link>.projects__link,
-    .projects__container-link .projects__example-of-work {}
-    .projects__container-link>.projects__link {}
-    .projects__container-link>.projects__link:before {}
-    .projects__container-link:hover>.projects__link:before {}
+    .projects {
+        width: 376px;
+        height: 786px;
+        background: #FFFFFF;
+    }
+    .projects__wrapper {
+        width: 376px;
+        height: 752px;
+        margin-top: 34px;
+        display: flex;
+    }
+    .projects__column-one {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+    }
+    .projects__column-two {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        justify-content: flex-start;
+    }
+    .projects__example-of-work {
+        width: 188px;
+        height: 188px;
+        background: #D8D8D8;
+    }
+    .projects__container-link {
+        width: 188px;
+        height: 188px;
+    }
     /* Projects style end */
     /* Site order style start */
-    .site-order {}
-    .site-order__wrapper {}
-    .site-order__title {}
-    .site-order__text {}
-    .site-order__form {}
-    .form__text--center {}
-    input {}
-    .form__text-area {}
+    .site-order {
+        width: 375px;
+        height: 830px;
+        background: #E5E5E5;
+    }
+    .site-order__wrapper {
+        width: 375px;
+        height: 830px;
+        margin: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .site-order__title {
+        width: 260px;
+        height: 38px;
+        margin-top: 20px;
+        margin-bottom: 34px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        text-align: center;
+        color: #000000;
+    }
+    .site-order__text {
+        width: 322px;
+        height: 98px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        color: #727272;
+    }
+    .site-order__form {
+        width: 375px;
+        height: 500px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .form__text--center {
+        width: 375px;
+        height: 150px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    input {
+        border: none;
+        padding-left: 20px;
+        width: 342px;
+        height: 50px;
+        background: #FFFFFF;
+    }
+    .form__text-area {
+        width: 342px;
+        height: 175px;
+        padding-bottom: 123px;
+        margin-bottom: 48px;
+    }
     /* Site order style end */
     /* Footer style start */
-    .footer {}
-    .footer__wrapper {}
-    .footer__signature {}
-    .footer__title {}
-    .footer__text {}
-    .footer__social-networks {
-        /* Footer style end */
+    .footer {
+        width: 375px;
+        height: 210px;
+        background: #34547A;
     }
+    .footer__wrapper {
+        display: flex;
+        width: 375px;
+        height: 180px;
+        flex-flow: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer__signature {
+        width: 375px;
+        height: 70px;
+        display: flex;
+        flex-flow: column;
+        margin-top: 10px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer__title {
+        width: 130px;
+        height: 19px;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .footer__text {
+        width: 193px;
+        height: 12px;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .footer__social-networks {}
+    /* Footer style end */
 }
