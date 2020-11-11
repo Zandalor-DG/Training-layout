@@ -13,7 +13,6 @@ html {
 
 @media (min-width: 1280px) {
     body {
-        width: 1920px;
         font-family: 'Roboto';
         font-style: normal;
         font-size: 16px;
@@ -24,17 +23,13 @@ html {
     /* Header style start */
     .header {
         background-color: #EEEFF1;
-        top: 0;
-        left: 0;
-        width: 1920px;
-        height: 700px;
-        margin: 0 auto;
+        margin: auto;
+        padding-bottom: 146px;
+        padding-top: 57px;
     }
     .wrapper__header {
-        width: 1150px;
-        height: 600px;
+        max-width: 1105px;
         margin: auto;
-        padding-top: 50px;
     }
     .header__wrapper {
         display: flex;
@@ -43,21 +38,15 @@ html {
         align-items: center;
     }
     .header__log {
-        width: 96px;
-        height: 60px;
         font-family: Revalia;
         font-style: normal;
         font-weight: normal;
         font-size: 48px;
         line-height: 60px;
-        /* identical to box height */
         text-align: center;
         color: #34547A;
     }
-    .header__nav {
-        width: 615px;
-        height: 16px;
-    }
+    .header__nav {}
     .header__logo-link {
         text-decoration: none;
     }
@@ -90,11 +79,8 @@ html {
         justify-content: space-around;
         align-items: center;
         margin-top: 100px;
-        width: 1150px;
     }
     .header__image {
-        width: 357px;
-        height: 233.7px;
         margin-left: 80px;
     }
     .header__content {
@@ -105,8 +91,6 @@ html {
         margin-left: 110px;
     }
     .header__title {
-        width: 541px;
-        height: 45px;
         margin-bottom: 60px;
         font-weight: 500;
         font-size: 48px;
@@ -114,8 +98,6 @@ html {
         color: #000000;
     }
     .header__text {
-        width: 540px;
-        height: 65px;
         margin-bottom: 60px;
         font-weight: normal;
         font-size: 16px;
@@ -126,6 +108,7 @@ html {
         width: 225px;
         height: 65px;
         background: #34547A;
+        border: none;
         font-size: 16px;
         line-height: 26px;
         text-align: center;
@@ -138,12 +121,14 @@ html {
         display: flex;
         justify-content: center;
         flex-flow: column;
-        width: 1920px;
-        height: 370px;
+        padding-top: 119px;
+        padding-bottom: 100px;
+    }
+    .about-me__wrapper {
+        max-width: 540px;
+        margin: auto;
     }
     .about-me__title {
-        width: 403px;
-        height: 30px;
         margin: auto;
         margin-bottom: 50px;
         font-weight: 500;
@@ -153,8 +138,6 @@ html {
         color: #000000;
     }
     .about-me__text {
-        width: 540px;
-        height: 67px;
         margin: auto;
         font-weight: normal;
         font-size: 16px;
@@ -166,39 +149,36 @@ html {
     .portfolio {
         display: flex;
         align-items: center;
-        width: 1920px;
-        height: 250px;
+        padding-top: 100px;
+        padding-bottom: 100px;
         background: #34547A;
     }
     .portfolio__wrapper {
         display: flex;
         flex-flow: row;
         justify-content: space-around;
-        width: 1150px;
+        max-width: 1150px;
         margin-left: auto;
         margin-right: auto;
         vertical-align: middle;
     }
     .portfolio__section {
         display: flex;
-        justify-content: space-around;
-        width: 141px;
-        height: 50px;
+        margin-right: 53px;
     }
-    .portfolio__block-text {
-        margin-left: 20px;
+    .portfolio__section:last-child {
+        margin-right: 0px;
+    }
+    .portfolio__image {
+        margin-right: 20px;
     }
     .portfolio__title {
-        width: 36px;
-        height: 19px;
         font-weight: 500;
         font-size: 21px;
         line-height: 25px;
         color: #FFFFFF;
     }
     .portfolio__text {
-        width: 71px;
-        height: 15px;
         font-weight: normal;
         font-size: 16px;
         line-height: 26px;
@@ -208,28 +188,23 @@ html {
     /* My skills style start */
     .my-skills {
         display: flex;
-        width: 1920px;
-        height: 655px;
+        padding-top: 102px;
+        padding-bottom: 101px;
     }
     .my-skills__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-flow: row;
-        width: 1150px;
-        height: 450px;
+        max-width: 1150px;
         margin: auto;
     }
     .my-skills__block-text {
-        height: 450px;
-        width: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     .my-skills__title {
-        width: 403px;
-        height: 30px;
         font-weight: 500;
         font-size: 32px;
         line-height: 37px;
@@ -256,8 +231,9 @@ html {
         transform: rotate(-0.06deg);
     }
     .my-skills__photo {
-        width: 555px;
-        height: 450px;
+        margin-left: 150px;
+        max-width: 555px;
+        max-height: 450px;
         background: #C4C4C4;
     }
     /* My skills style end */
@@ -266,13 +242,9 @@ html {
         display: flex;
         justify-content: flex-start;
         flex-flow: column;
-        width: 1920px;
-        height: 1004px;
         background: #EEEFF1;
     }
     .how-i-work__title {
-        width: 403px;
-        height: 30px;
         font-weight: 500;
         font-size: 32px;
         line-height: 37px;
@@ -282,8 +254,6 @@ html {
         margin-top: 100px;
     }
     .how-i-work__text {
-        width: 540px;
-        height: 67px;
         font-weight: normal;
         font-size: 16px;
         line-height: 26px;
@@ -294,8 +264,6 @@ html {
     }
     .how-i-work__present-video {
         display: flex;
-        width: 1110px;
-        height: 600px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 57px;
@@ -303,11 +271,10 @@ html {
     /* How i work style end */
     /* Projects style start */
     .projects {
-        width: 1920px;
-        height: 1016px;
         background: #FFFFFF;
     }
     .projects__wrapper {
+        max-width: 1105px;
         margin-top: 50px;
     }
     .projects__column-one {
@@ -320,10 +287,7 @@ html {
         flex-flow: row-reverse wrap;
         justify-content: flex-start;
     }
-    .projects__example-of-work {
-        width: 480px;
-        height: 480px;
-    }
+    .projects__example-of-work {}
     .projects__container-link {
         display: inline-block;
         vertical-align: top;
@@ -352,13 +316,10 @@ html {
     /* Projects style end */
     /* Site order style start */
     .site-order {
-        width: 1920px;
-        height: 762px;
         background: #EEEFF1;
     }
     .site-order__wrapper {
-        width: 1150px;
-        height: 700px;
+        max-width: 1150px;
         margin: auto;
         display: flex;
         flex-flow: column;
@@ -366,8 +327,6 @@ html {
         align-items: center;
     }
     .site-order__title {
-        width: 406px;
-        height: 30px;
         font-weight: 500;
         font-size: 32px;
         line-height: 37px;
@@ -378,8 +337,6 @@ html {
         font-size: 16px;
         line-height: 26px;
         color: #727272;
-        width: 540px;
-        height: 67px;
     }
     .site-order__form {
         display: flex;
@@ -388,8 +345,6 @@ html {
         align-items: center;
     }
     .form__text--center {
-        width: 570px;
-        height: 80px;
         display: flex;
         flex-flow: row;
         justify-content: space-around;
@@ -397,13 +352,9 @@ html {
     input {
         border: none;
         padding-left: 20px;
-        width: 255px;
-        height: 50px;
         background: #FFFFFF;
     }
     .form__text-area {
-        width: 540px;
-        height: 175px;
         margin-bottom: 50px;
         text-align: left;
         padding-bottom: 120px;
@@ -412,8 +363,6 @@ html {
     /* Site order style end */
     /* Footer style start */
     .footer {
-        width: 1920px;
-        height: 151px;
         background: #34547A;
     }
     .footer__wrapper {
@@ -421,35 +370,26 @@ html {
         flex-flow: row;
         justify-content: space-around;
         align-items: center;
-        width: 1920px;
-        height: 150px;
+        max-width: 1150px;
     }
     .footer__signature {
         display: flex;
         flex-flow: column;
         justify-content: space-between;
-        width: 200px;
-        height: 50px;
     }
     .footer__title {
-        width: 130px;
-        height: 19px;
         font-weight: 500;
         font-size: 21px;
         line-height: 25px;
         color: #FFFFFF;
     }
     .footer__text {
-        width: 193px;
-        height: 12px;
         font-weight: normal;
         font-size: 13px;
         line-height: 21px;
         color: #FFFFFF;
     }
     .footer__social-networks {
-        width: 200px;
-        height: 40px;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
