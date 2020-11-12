@@ -8,6 +8,18 @@ html {
     box-sizing: inherit;
 }
 
+button {
+    width: 225px;
+    height: 65px;
+    background: #34547A;
+    border: none;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
 
 /* .wrapper {} */
 
@@ -103,17 +115,6 @@ html {
         font-size: 16px;
         line-height: 26px;
         color: #727272;
-    }
-    button {
-        width: 225px;
-        height: 65px;
-        background: #34547A;
-        border: none;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        color: #FFFFFF;
     }
     /* Header style end */
     /* AboutMe style start */
@@ -243,6 +244,12 @@ html {
         justify-content: flex-start;
         flex-flow: column;
         background: #EEEFF1;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .how-i-work__wrapper {
+        max-width: 1150px;
+        margin: auto;
     }
     .how-i-work__title {
         font-weight: 500;
@@ -251,11 +258,11 @@ html {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 100px;
     }
     .how-i-work__text {
         font-weight: normal;
         font-size: 16px;
+        max-width: 540px;
         line-height: 26px;
         text-align: center;
         margin-left: auto;
@@ -264,6 +271,8 @@ html {
     }
     .how-i-work__present-video {
         display: flex;
+        min-width: 1110px;
+        min-height: 600px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 57px;
@@ -271,24 +280,24 @@ html {
     /* How i work style end */
     /* Projects style start */
     .projects {
+        padding-top: 28px;
+        padding-bottom: 28px;
         background: #FFFFFF;
     }
     .projects__wrapper {
-        max-width: 1105px;
-        margin-top: 50px;
-    }
-    .projects__column-one {
+        margin: auto;
+        max-width: 1920px;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
     }
-    .projects__column-two {
-        display: flex;
-        flex-flow: row-reverse wrap;
-        justify-content: flex-start;
+    .projects__example-of-work {
+        width: 100%;
+        height: 100%;
     }
-    .projects__example-of-work {}
     .projects__container-link {
+        width: 25%;
+        height: 25%;
         display: inline-block;
         vertical-align: top;
     }
@@ -321,6 +330,8 @@ html {
     .site-order__wrapper {
         max-width: 1150px;
         margin: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
         display: flex;
         flex-flow: column;
         justify-content: space-around;
@@ -331,11 +342,16 @@ html {
         font-size: 32px;
         line-height: 37px;
         text-align: center;
+        margin-bottom: 50px;
     }
     .site-order__text {
+        max-width: 540px;
+        text-align: center;
+        margin-bottom: 65px;
         font-weight: normal;
         font-size: 16px;
         line-height: 26px;
+        text-align: center;
         color: #727272;
     }
     .site-order__form {
@@ -350,11 +366,17 @@ html {
         justify-content: space-around;
     }
     input {
+        width: 255px;
+        height: 50px;
         border: none;
         padding-left: 20px;
         background: #FFFFFF;
+        margin-bottom: 20px;
+        margin-left: 30px;
     }
     .form__text-area {
+        width: 540px;
+        height: 175px;
         margin-bottom: 50px;
         text-align: left;
         padding-bottom: 120px;
@@ -363,24 +385,27 @@ html {
     /* Site order style end */
     /* Footer style start */
     .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
         background: #34547A;
     }
     .footer__wrapper {
         display: flex;
         flex-flow: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         max-width: 1150px;
+        margin: auto;
     }
     .footer__signature {
         display: flex;
         flex-flow: column;
-        justify-content: space-between;
     }
     .footer__title {
         font-weight: 500;
         font-size: 21px;
         line-height: 25px;
+        margin-bottom: 20px;
         color: #FFFFFF;
     }
     .footer__text {
@@ -393,6 +418,12 @@ html {
         display: flex;
         flex-flow: row;
         justify-content: space-between;
+    }
+    .footer__link {
+        margin-right: 22px;
+    }
+    .footer__link:last-child {
+        margin-right: 0px;
     }
     /* Footer style end */
 }
