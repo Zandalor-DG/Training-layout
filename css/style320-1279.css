@@ -279,6 +279,7 @@
     }
     .site-order__text {
         font-weight: normal;
+        max-width: 322px;
         font-size: 16px;
         margin-bottom: 48px;
         line-height: 120%;
