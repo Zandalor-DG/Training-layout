@@ -238,10 +238,9 @@
     }
     .projects__wrapper {
         margin: auto;
-        height: 750px;
-        width: 375px;
+        width: 100%;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         justify-content: flex-start;
     }
     .projects__example-of-work {
@@ -253,6 +252,18 @@
         height: 25%;
         display: inline-block;
         vertical-align: top;
+    }
+    .projects__container-link--three {
+        order: 4;
+    }
+    .projects__container-link--four {
+        order: 3;
+    }
+    .projects__container-link--five {
+        order: 6;
+    }
+    .projects__container-link--six {
+        order: 5;
     }
     /* Projects style end */
     /* Site order style start */
